@@ -1,0 +1,22 @@
+<body>
+    <table id="table" >  
+        <thead>  
+            <tr>  
+                <th>Title</th>  
+                <th>Year</th>
+                <th>Poster</th>  
+            </tr>  
+        </thead>  
+         <tbody>  
+         <% movies.forEach(function (movie) { %>
+            <tr>  
+                <td><%= movie.title %></td>  
+                <td><%= movie.year %></td>
+                <td><%= movie.poster %></td>
+            </tr>                                   
+         <% }) %>
+         </tbody>
+    </table>   
+</body>
+
+</html>
