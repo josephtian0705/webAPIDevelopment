@@ -25,10 +25,10 @@ const querystr3 = `https://api.themoviedb.org/3/search/movie?api_key=${apikey2}&
 
 // database connection
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'moviedb',
+    host: 'jsk3f4rbvp8ayd7w.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+    user: '	ij66kkaqdw8cw4a8',
+    password: '	l6u9kixymc2dned4',
+    database: 'rxnutcwbsbrp3acq',
  })
 
 
