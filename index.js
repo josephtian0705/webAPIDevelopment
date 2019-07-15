@@ -5,7 +5,7 @@ var app = express();
 var router = express.Router();
 const bodyparser = require('body-parser');
 const path = require('path');
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({extended: true}));
@@ -25,10 +25,10 @@ const querystr3 = `https://api.themoviedb.org/3/search/movie?api_key=${apikey2}&
 
 // database connection
 const db = mysql.createConnection({
-    host: 'jsk3f4rbvp8ayd7w.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
-    user: '	ij66kkaqdw8cw4a8',
-    password: '	l6u9kixymc2dned4',
-    database: 'rxnutcwbsbrp3acq',
+    host: 'localhost',
+    user: 'root',
+    password: '',
+    database: 'moviedb',
  })
 
 
@@ -42,7 +42,7 @@ db.connect((err) =>{
  });
 
 //listen to the port
-app.listen(PORT, ()=>{
+app.listen(3000, ()=>{
    console.log('Portal 3000 is listen');
 });
 
