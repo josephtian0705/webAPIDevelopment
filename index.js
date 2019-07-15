@@ -42,7 +42,7 @@ db.connect((err) =>{
  });
 
 //listen to the port
-app.listen(PORT, ()=>{
+app.listen(process.env.PORT || 4000, ()=>{
    console.log('Portal 3000 is listen');
 });
 
